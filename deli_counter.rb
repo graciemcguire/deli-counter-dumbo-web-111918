@@ -11,6 +11,6 @@ def line(array)
 end 
 
 def take_a_number(array, person)
-  array.shift(person)
-  puts "test"
+  array.push(person)
+  puts "Welcome "
 end
