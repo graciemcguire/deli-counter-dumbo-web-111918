@@ -8,6 +8,6 @@ def line(queue)
     line.push("The line is currently: #{counter}. #{person}")
       counter += 1
     end
-      
   end
+  return line
 end
