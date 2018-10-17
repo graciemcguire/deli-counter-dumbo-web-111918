@@ -4,6 +4,6 @@ def line(array)
   array.each do |person|
     newArray.push("The line is currently: #{counter}. #{person}")
     counter += 1
-      puts linelist
   end
+  return newArray
 end
