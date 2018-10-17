@@ -9,3 +9,7 @@ def line(array)
     puts "The line is currently: #{newArray.join(" ")}"
   end
 end 
+
+def take_a_number(array, person)
+  array.shift(person)
+end
