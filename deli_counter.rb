@@ -17,8 +17,8 @@ end
 
 def now_serving(array)
   if !array.length
-    puts "The line is currently empty."
+    puts "There is nobody waiting to be served!"
   else
-    array.unshift()
+    array.shift()
   end 
 end
