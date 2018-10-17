@@ -15,4 +15,8 @@ def take_a_number(array, person)
   puts "Welcome, #{person}. You are number #{array.length} in line."
 
 def now_serving(array)
-  
+  if !array.length
+    puts "The line is currently empty."
+  else
+    array.unshift()
+  end 
