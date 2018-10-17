@@ -1,13 +1,13 @@
 def line(queue)
   counter = 0
-  line = []
+  linelist = []
   queue.each do |person|
-    if  line.push("The line is currently: #{counter}. #{person}")
-      counter += 1
+    linelist.push("The line is currently: #{counter}. #{person}")
+    counter += 1
+    if counter == 0 
+      puts "The line is currently empty."
     else
-      counter == 0 
-    puts "The line is currently empty."
+      puts linelist
     end
   end
-  return line
 end
