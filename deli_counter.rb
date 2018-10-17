@@ -1,8 +1,11 @@
 def line(array)
-  counter = 0
   newArray = []
-  array.each do |person|
-    puts "The line is currently: #{counter}. #{person}"
-    counter += 1
+  if array.length == 0 
+    puts "The line is currently empty."
+  else
+    array.each.with_index(1) do |name, index|
+      newArray.push("#{index}.#{name}")
+    end 
+    puts "The line is currently #{newArray.join(" ")}"
   end
-end
+end 
